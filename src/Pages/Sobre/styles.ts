@@ -6,7 +6,7 @@ import sobreBackground from '../../assets/IconsSvg/background-avatar-sobre.svg'
 
 import { motion } from "framer-motion";
 
-export const About = styled(motion.div)`
+export const About = styled.div`
     background-image:url(${sobre});
     background-repeat: no-repeat;
     background-size: cover;
@@ -124,7 +124,6 @@ export const Formation = styled(motion.div)`
         .first-box{
             background: #040312;         
             z-index: 2;
-
             border-radius: 15px;
             padding: 15px;
            
