@@ -6,7 +6,7 @@ import Home from '../../assets/Home-img-de-fundo.png'
 import IconsGitHub from "../../assets/IconsGithub";
 import IconsLinkedin from "../../assets/IconsLinkedin";
 
-export const Container = styled(motion.div)`
+export const Container = styled.div`
     background-image:url(${Home});
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,23 +21,22 @@ export const Container = styled(motion.div)`
 `
 
 
-export const GitHubSVG = styled(IconsGitHub)`
+export const GitHubSVG = styled(IconsGitHub)`      
 `
 export const LinkedinSVG = styled(IconsLinkedin)`
- `
+`
 
-export const LinkWeb = styled.section`
+export const LinkWeb = styled(motion.section)`
+        z-index:900;
+        position:relative;
         
         width:87%;
-        margin:10px auto;
-        /* padding-top: 20px; */
-        /* margin: auto; */
+        margin:10px auto;        
         
-
         @media(max-width: 620px){
             margin-bottom: 0px;
             padding-top: 30px;
-            
+            z-index:900;
         }
         
         span{
@@ -48,6 +47,7 @@ export const LinkWeb = styled.section`
         }
         
         svg{
+
                 stroke: #14DEEB;
                 width: 36px;
                 height: 36px;
@@ -73,9 +73,9 @@ export const Row = styled.div`
     @media(max-width: 620px){
         margin:30px auto;
     }
-    
 `
 export const MiddleBox = styled.div`
+        z-index: 10;
         display: flex;
         align-items: center;
         justify-content: space-between;
