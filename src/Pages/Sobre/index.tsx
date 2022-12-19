@@ -10,11 +10,7 @@ import iconsTailwind from "../../assets/IconsSvg/icons-tailwind-css.svg";
 
 export default function Sobre() {
   return (
-    <S.About
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
+    <S.About>
       <S.AboutRow>
         <S.Details>
           <S.StyleAvatar>
@@ -23,7 +19,11 @@ export default function Sobre() {
             </div>
           </S.StyleAvatar>
 
-          <S.Formation>
+          <S.Formation
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+          >
             <div className="first-box">
               <p className="solo">
                 Olá, me chamo Wellington e tenho 23 anos, sou formado em{" "}
