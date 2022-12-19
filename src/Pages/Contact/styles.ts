@@ -90,10 +90,6 @@ export const InformationBox = styled.div`
 
 export const LinkSocial = styled(LinkWeb)`
     margin-top:0 ;
-
-    @media(max-width: 691px){  
-        z-index: 100;  
-    }
       
    ul{
         list-style:none;
