@@ -13,7 +13,7 @@ export const Navigation = styled.div`
    
         width: 100%;
         height: 97vh;    
-        z-index: 5;
+        /* z-index: 5; */
     }
 
     a{
@@ -24,11 +24,13 @@ export const Navigation = styled.div`
     }
 
     a.active{
-        opacity: 0.7;
-        background: #02FFB3;
+        /* opacity: 0.7; */
+        /* background: #ffb703; */
+        /* background: #02FFB3; */
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
+        /* color: transparent; */
+        color: #ffb703;
 
         &:hover{
             color: #02FFB3;
