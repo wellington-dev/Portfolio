@@ -1,23 +1,9 @@
 import * as S from "./styles";
-// import {
-//   Container,
-//   Row,
-//   MiddleBox,
-//   BoxText,
-//   BoxImg,
-//   LinkWeb,
-//   GitHubSVG,
-//   LinkedinSVG,
-// } from "./styles";
 
 import homeMain from "../../assets/IconsSvg/homeMain.svg";
 export default function Home() {
   return (
-    <S.Container
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
+    <S.Container>
       <S.LinkWeb>
         <span>
           <S.GitHubSVG />
